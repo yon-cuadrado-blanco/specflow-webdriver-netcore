@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AutomationHelpers</name>
+    </assembly>
+    <members>
+        <member name="T:Automation.Helpers.ApiExecutionHelper">
+            <summary>
+            The api Execution helper class.
+            </summary>
+        </member>
+        <member name="F:Automation.Helpers.ApiExecutionHelper.options">
+            <summary>
+            The options.
+            </summary>
+        </member>
+        <member name="F:Automation.Helpers.ApiExecutionHelper.httpResponseMessage">
+            <summary>
+            The HTTP response message.
+            </summary>
+        </member>
+        <member name="F:Automation.Helpers.ApiExecutionHelper.userId">
+            <summary>
+            The user identifier.
+            </summary>
+        </member>
+        <member name="M:Automation.Helpers.ApiExecutionHelper.#ctor(DataFactory.Configuration.IWritableOptions{DataFactory.Configuration.ConfigurationParameters})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Automation.Helpers.ApiExecutionHelper"/> class.
+            </summary>
+            <param name="options">The options.</param>
+        </member>
+        <member name="M:Automation.Helpers.ApiExecutionHelper.SendRequest">
+            <summary>
+            Sends the request.
+            </summary>
+        </member>
+        <member name="M:Automation.Helpers.ApiExecutionHelper.SetUserId(System.String)">
+            <summary>
+            Sets the user identifier.
+            </summary>
+            <param name="userId">The user identifier.</param>
+        </member>
+        <member name="M:Automation.Helpers.ApiExecutionHelper.GetResponse">
+            <summary>
+            Gets the response.
+            </summary>
+            <returns>Gets the http response.</returns>
+        </member>
+        <member name="T:Automation.Helpers.ExcelFileHelper">
+            <summary>
+            Excel file helper.
+            </summary>
+        </member>
+        <member name="F:Automation.Helpers.ExcelFileHelper.workbook">
+            <summary>
+            The excel workbook.
+            </summary>
+        </member>
+        <member name="F:Automation.Helpers.ExcelFileHelper.excelPackge">
+            <summary>
+            The excel package.
+            </summary>
+        </member>
+        <member name="F:Automation.Helpers.ExcelFileHelper.disposed">
+            <summary>
+            The disposed.
+            </summary>
+        </member>
+        <member name="M:Automation.Helpers.ExcelFileHelper.ColumnIndexToColumnLetter(System.Int32)">
+            <summary>
+            The column index to column letter.
+            </summary>
+            <param name="colIndex">The col index.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Automation.Helpers.ExcelFileHelper.ExcelColumnNameToNumber(System.String)">
+            <summary>
+            Excels the column name to number.
+            </summary>
+            <param name="columnName">Name of the column.</param>
+            <returns>The column number.</returns>
+            <exception cref="T:System.ArgumentNullException">The columnName.</exception>
+        </member>
+        <member name="M:Automation.Helpers.ExcelFileHelper.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting
+            unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Automation.Helpers.ExcelFileHelper.OpenFile(System.String)">
+            <summary>
+            Opens the file.
+            </summary>
+            <param name="fileNameAndPath">The file name and path.</param>
+        </member>
+        <member name="M:Automation.Helpers.ExcelFileHelper.GetCellData(System.String,System.Int32,System.Int32)">
+            <summary>
+            The get cell data.
+            </summary>
+            <param name="workSheetName">The work sheet name.</param>
+            <param name="rowNumber">The row number.</param>
+            <param name="columnNumber">The column number.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Automation.Helpers.ExcelFileHelper.GetCellData(System.String,System.Int32,System.String)">
+            <summary>
+            Gets the cell data.
+            </summary>
+            <param name="workSheetName">Name of the work sheet.</param>
+            <param name="rowNumber">The row number.</param>
+            <param name="columnName">Name of the column.</param>
+            <returns>THe cell data.</returns>
+        </member>
+        <member name="M:Automation.Helpers.ExcelFileHelper.CountWorksheetRows(System.String)">
+            <summary>
+            Get the worksheet row count.
+            </summary>
+            <param name="workSheetName">The name of the worksheet.</param>
+            <returns>The excel row count.</returns>
+        </member>
+        <member name="M:Automation.Helpers.ExcelFileHelper.Dispose(System.Boolean)">
+            <summary>
+            The dispose.
+            </summary>
+            <param name="disposing">The disposing parameter.</param>
+        </member>
+        <member name="T:Automation.Helpers.FileOperationsHelper">
+            <summary>
+            The file moving copying helper.
+            </summary>
+        </member>
+        <member name="F:Automation.Helpers.FileOperationsHelper.options">
+            <summary>
+            The options.
+            </summary>
+        </member>
+        <member name="M:Automation.Helpers.FileOperationsHelper.#ctor(DataFactory.Configuration.IWritableOptions{DataFactory.Configuration.ConfigurationParameters})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Automation.Helpers.FileOperationsHelper"/> class.
+            </summary>
+            <param name="options">The options.</param>
+        </member>
+        <member name="P:Automation.Helpers.FileOperationsHelper.SourceFile">
+            <summary>
+            Gets or sets the source file.
+            </summary>
+            <value>
+            The source file.
+            </value>
+        </member>
+        <member name="P:Automation.Helpers.FileOperationsHelper.SourceFolder">
+            <summary>
+            Gets or sets the source folder.
+            </summary>
+            <value>
+            The source folder.
+            </value>
+        </member>
+        <member name="P:Automation.Helpers.FileOperationsHelper.TargetFile">
+            <summary>
+            Gets or sets the target file.
+            </summary>
+            <value>
+            The target file.
+            </value>
+        </member>
+        <member name="P:Automation.Helpers.FileOperationsHelper.TargetFolder">
+            <summary>
+            Gets or sets the target folder.
+            </summary>
+            <value>
+            The target folder.
+            </value>
+        </member>
+        <member name="M:Automation.Helpers.FileOperationsHelper.CopyFileToLocation">
+            <summary>
+            Copies the file to location.
+            </summary>
+            <exception cref="T:System.Exception">
+            The file is still in the source folder
+            or
+            The file has not been moved to the target folder.
+            </exception>
+        </member>
+        <member name="M:Automation.Helpers.FileOperationsHelper.MoveFileToLocation">
+            <summary>
+            Moves the file to location.
+            </summary>
+        </member>
+        <member name="M:Automation.Helpers.FileOperationsHelper.IsFileCopied(System.Int32)">
+            <summary>
+            Determines whether [is file copied] [the specified timeout].
+            </summary>
+            <param name="timeout">The timeout.</param>
+            <returns>
+              <c>true</c> if [is file copied] [the specified timeout]; otherwise, <c>false</c>.
+            </returns>
+            <exception cref="T:System.Exception">The file has not been moved to the target folder.</exception>
+        </member>
+        <member name="M:Automation.Helpers.FileOperationsHelper.IsFileMoved(System.Int32)">
+            <summary>
+            Determines whether [is file moved] [the specified timeout].
+            </summary>
+            <param name="timeout">The timeout.</param>
+            <returns>
+              <c>true</c> if [is file moved] [the specified timeout]; otherwise, <c>false</c>.
+            </returns>
+            <exception cref="T:System.Exception">The file has not been moved to the target folder.</exception>
+        </member>
+        <member name="M:Automation.Helpers.FileOperationsHelper.RetryUntilSuccessOrTimeout(System.Func{System.Boolean},System.TimeSpan)">
+            <summary>
+            The retry until success or timeout.
+            </summary>
+            <param name="task">The task.</param>
+            <param name="timeSpan">The time span.</param>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="T:Automation.Helpers.MongoDbHelper">
+            <summary>
+            The mongo database manage access.
+            </summary>
+        </member>
+        <member name="F:Automation.Helpers.MongoDbHelper.collection">
+            <summary>
+            The database.
+            </summary>
+        </member>
+        <member name="F:Automation.Helpers.MongoDbHelper.database">
+            <summary>
+            The database.
+            </summary>
+        </member>
+        <member name="F:Automation.Helpers.MongoDbHelper.mongoClient">
+            <summary>
+            The mongo client.
+            </summary>
+        </member>
+        <member name="F:Automation.Helpers.MongoDbHelper.options">
+            <summary>
+            The options.
+            </summary>
+        </member>
+        <member name="F:Automation.Helpers.MongoDbHelper.matchFound">
+            <summary>
+            The match found.
+            </summary>
+        </member>
+        <member name="M:Automation.Helpers.MongoDbHelper.#ctor(DataFactory.Configuration.IWritableOptions{DataFactory.Configuration.ConfigurationParameters})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Automation.Helpers.MongoDbHelper"/> class.
+            </summary>
+            <param name="options">The options.</param>
+        </member>
+        <member name="P:Automation.Helpers.MongoDbHelper.Client">
+            <summary>
+            Gets or sets the client.
+            </summary>
+            <value>
+            The client.
+            </value>
+        </member>
+        <member name="P:Automation.Helpers.MongoDbHelper.Parameters">
+            <summary>
+            Gets the Parameters.
+            </summary>
+        </member>
+        <member name="M:Automation.Helpers.MongoDbHelper.AddEmployee">
+            <summary>
+            Adds the employee.
+            </summary>
+        </member>
+        <member name="M:Automation.Helpers.MongoDbHelper.GetMatchFound">
+            <summary>
+            Gets the match found.
+            </summary>
+            <returns>The value of the variable match found.</returns>
+        </member>
+        <member name="M:Automation.Helpers.MongoDbHelper.DeleteDocument(DataFactory.Configuration.ClientsDto)">
+            <summary>
+            The delete document.
+            </summary>
+            <param name="client">describe client parameter on DeleteDocument.</param>
+        </member>
+        <member name="M:Automation.Helpers.MongoDbHelper.Search(System.Linq.Expressions.Expression{System.Func{DataFactory.Configuration.ClientsDto,System.Boolean}})">
+            <summary>
+            Searches the specified filter.
+            </summary>
+            <param name="filter">The filter.</param>
+            <returns>The result of the query to the database.</returns>
+        </member>
+        <member name="M:Automation.Helpers.MongoDbHelper.GetEmployee">
+            <summary>
+            Gets the employee.
+            </summary>
+            <returns>The ClientsDto object.</returns>
+        </member>
+        <member name="M:Automation.Helpers.MongoDbHelper.UpdateClient(DataFactory.Configuration.ClientsDto,DataFactory.Configuration.ClientsDto)">
+            <summary>
+            The update element in database function.
+            </summary>
+            <param name="client">client to be updated.</param>
+            <param name="newClient">new value for the client.</param>
+        </member>
+        <member name="T:Automation.Helpers.RegistrationUsersHelper">
+            <summary>
+            Registration users helper.
+            </summary>
+        </member>
+        <member name="F:Automation.Helpers.RegistrationUsersHelper.excelFileHelper">
+            <summary>
+            The excel file helper.
+            </summary>
+        </member>
+        <member name="F:Automation.Helpers.RegistrationUsersHelper.options">
+            <summary>
+            The configuration parameters.
+            </summary>
+        </member>
+        <member name="M:Automation.Helpers.RegistrationUsersHelper.#ctor(Automation.Helpers.ExcelFileHelper,DataFactory.Configuration.IWritableOptions{DataFactory.Configuration.ConfigurationParameters})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Automation.Helpers.RegistrationUsersHelper"/> class.
+            </summary>
+            <param name="excelFileHelper">The excel file helper.</param>
+            <param name="options">The options.</param>
+        </member>
+        <member name="M:Automation.Helpers.RegistrationUsersHelper.GetUserData(System.String)">
+            <summary>
+            Gets the user data.
+            </summary>
+            <param name="userDataFile">The user data file.</param>
+            <returns>The user data list.</returns>
+        </member>
+        <member name="T:Automation.Reflection.ReflectionExtensions">
+            <summary>
+            The reflection extensions class.
+            </summary>
+        </member>
+        <member name="M:Automation.Reflection.ReflectionExtensions.GetFieldValue``1(System.Object,System.String)">
+            <summary>
+            Gets the field value.
+            </summary>
+            <typeparam name="T">It can by any type.</typeparam>
+            <param name="baseObject">The object.</param>
+            <param name="name">The name.</param>
+            <returns>The value of a field.</returns>
+        </member>
+    </members>
+</doc>

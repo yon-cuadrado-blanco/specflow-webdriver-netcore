@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Configurations>Debug;ChromeDesktop;ChromeAndroid8;Firefox;IE11;Safari</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ChromeAndroid8|AnyCPU'">
+    <DocumentationFile>..\Shared\bin\AutomationHelpers.xml</DocumentationFile>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Shared\bin</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Safari|AnyCPU'">
+    <DocumentationFile>..\Shared\bin\AutomationHelpers.xml</DocumentationFile>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Shared\bin</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ChromeDesktop|AnyCPU'">
+    <DocumentationFile>..\Shared\bin\AutomationHelpers.xml</DocumentationFile>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Shared\bin</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>..\Shared\bin\AutomationHelpers.xml</DocumentationFile>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Shared\bin</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Firefox|AnyCPU'">
+    <DocumentationFile>..\Shared\bin\AutomationHelpers.xml</DocumentationFile>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Shared\bin</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IE11|AnyCPU'">
+    <DocumentationFile>..\Shared\bin\AutomationHelpers.xml</DocumentationFile>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Shared\bin</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="..\Shared\stylecop.json" Link="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Reflection\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetSeleniumExtras.PageObjects" Version="3.11.0" />
+    <PackageReference Include="EPPlus" Version="4.5.3.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NetFramework.Analyzers" Version="2.9.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MongoDB.Bson" Version="2.10.2" />
+    <PackageReference Include="MongoDB.Driver" Version="2.10.2" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.10.2" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.1.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.0" />
+    <PackageReference Include="Protractor.Net.Standard" Version="0.12.0" />
+    <PackageReference Include="SpecFlow" Version="3.1.86" />
+    <PackageReference Include="SpecFlow.MsTest" Version="3.1.86" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.1.86" />
+    <PackageReference Include="StyleCop.Analyzers.Unstable" Version="1.2.0.164">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataFactory\DataFactory.csproj" />
+  </ItemGroup>
+
+</Project>

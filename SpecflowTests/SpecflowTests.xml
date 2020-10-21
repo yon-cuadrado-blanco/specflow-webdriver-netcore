@@ -1,0 +1,575 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpecflowTests</name>
+    </assembly>
+    <members>
+        <member name="T:Specflow.SpecflowContainer">
+            <summary>
+            The Specflow Container class.
+            </summary>
+        </member>
+        <member name="M:Specflow.SpecflowContainer.#ctor(BoDi.IObjectContainer,DataFactory.Configuration.IWritableOptions{DataFactory.Configuration.ConfigurationParameters})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.SpecflowContainer"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+            <param name="options">The options object.</param>
+        </member>
+        <member name="P:Specflow.SpecflowContainer.ObjectContainer">
+            <summary>
+            Gets the object container.
+            </summary>
+            <value>
+            The object container.
+            </value>
+        </member>
+        <member name="T:Specflow.GlobalFunctions.Hooks">
+            <summary>
+            The Specflow Hooks.
+            </summary>
+        </member>
+        <member name="F:Specflow.GlobalFunctions.Hooks.objectContainer">
+            <summary>
+            The object container.
+            </summary>
+        </member>
+        <member name="M:Specflow.GlobalFunctions.Hooks.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.GlobalFunctions.Hooks"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="P:Specflow.GlobalFunctions.Hooks.AppiumLocalService">
+            <summary>
+            Gets or sets appium local service.
+            </summary>
+        </member>
+        <member name="P:Specflow.GlobalFunctions.Hooks.WebDriverContextStatic">
+            <summary>
+            Gets or sets the webdriver.
+            </summary>
+        </member>
+        <member name="P:Specflow.GlobalFunctions.Hooks.TestContext">
+            <summary>
+            Gets or sets the test context.
+            </summary>
+        </member>
+        <member name="M:Specflow.GlobalFunctions.Hooks.GetWebDriver(BoDi.IObjectContainer,DataFactory.Configuration.IWritableOptions{DataFactory.Configuration.ConfigurationParameters})">
+            <summary>
+            Gets the webdrivercontext.
+            </summary>
+            <param name="objectContainer">The configuration parameters object.</param>
+            <param name="configurationParameters">The object container object.</param>
+            <returns>The webDrvierContext object.</returns>
+        </member>
+        <member name="M:Specflow.GlobalFunctions.Hooks.LoadConfigurationParameters">
+            <summary>
+            The load configuration parameters.
+            </summary>
+            <param name="env">The hosting environment.</param>
+            <param name="services">The services collection.</param>
+        </member>
+        <member name="M:Specflow.GlobalFunctions.Hooks.StopAppium">
+            <summary>
+            Stop appium process.
+            </summary>
+        </member>
+        <member name="M:Specflow.GlobalFunctions.Hooks.CloseOrResetBrowser">
+            <summary>
+            The execute final steps.
+            </summary>
+        </member>
+        <member name="M:Specflow.GlobalFunctions.Hooks.LoadContainer">
+            <summary>
+            Loads the container.
+            </summary>
+        </member>
+        <member name="M:Specflow.GlobalFunctions.Hooks.TakeScreenshot">
+            <summary>
+            The take screenshot.
+            </summary>
+        </member>
+        <member name="T:Specflow.Steps.ApiTestsSteps">
+            <summary>
+            The API tests steps.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.ApiTestsSteps.apiExecutionHelper">
+            <summary>
+            The API execution helper.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.ApiTestsSteps.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.Steps.ApiTestsSteps"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="P:Specflow.Steps.ApiTestsSteps.ApiContext">
+            <summary>
+            Gets the API context.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.ApiTestsSteps.GivenAValidUserId">
+            <summary>
+            The given a valid user id.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.ApiTestsSteps.GivenAnUnexistingUserId">
+            <summary>
+            The given a non existing user id.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.ApiTestsSteps.GivenAnIncorrectUserId">
+            <summary>
+            The given an incorrect user id.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.ApiTestsSteps.WhenTheInformationOfThisUserIsRequested">
+            <summary>
+            The when the information of this user is requested.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.ApiTestsSteps.ThenTheUserDataIsReturned">
+            <summary>
+            The then the user data is returned.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.ApiTestsSteps.ThenNoUserDataIsReturned">
+            <summary>
+            The then no user data is returned.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.ApiTestsSteps.ThenAnErrorIsReturned">
+            <summary>
+            The then an error is returned.
+            </summary>
+        </member>
+        <member name="T:Specflow.Steps.CommonSteps">
+            <summary>
+            The common steps.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.CommonSteps.options">
+            <summary>
+            The configuration parameters.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.CommonSteps.objectContainer">
+            <summary>
+            The object container.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.CommonSteps.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.Steps.CommonSteps"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="M:Specflow.Steps.CommonSteps.GivenINavigateToThePage(System.String)">
+            <summary>
+            The given i navigate to the page.
+            </summary>
+            <param name="appName">describe appName parameter on GivenINavigateToThePage.</param>
+        </member>
+        <member name="M:Specflow.Steps.CommonSteps.GetAppUrl(System.String)">
+            <summary>
+            The function gets the value of the url from the app.config class.
+            </summary>
+            <param name="app">Name of the app.</param>
+            <returns>Url of the app.</returns>
+        </member>
+        <member name="T:Specflow.Steps.DragAndDropSteps">
+            <summary>
+            The drag and drop steps.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.DragAndDropSteps.dragAndDropPage">
+            <summary>
+            The drag and drop page.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.DragAndDropSteps.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.Steps.DragAndDropSteps"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="M:Specflow.Steps.DragAndDropSteps.ThenTheResultShouldBeThatTheFirstElementIsMovedNearTheSecondElement">
+            <summary>
+            The then the result should be that the first element is moved near the second element.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.DragAndDropSteps.ThenTheResultShouldBeThatTheElementHasChangedHisPosition">
+            <summary>
+            The then the result should be that the element has changed his position.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.DragAndDropSteps.GivenIClickOnTheDraggableAndSortableButton">
+            <summary>
+            The given i click on the DRAGGABLE and sortable button.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.DragAndDropSteps.WhenIDragWebElementAndDropOverWebElementInThePage(System.String,System.String)">
+            <summary>
+            Whens the i drag web element and drop over web element in the page.
+            </summary>
+            <param name="webElementToBeMovedName">Name of the web element to be moved.</param>
+            <param name="targetWebElementName">Name of the target web element.</param>
+        </member>
+        <member name="M:Specflow.Steps.DragAndDropSteps.WhenIDragWebElementAndDropOtTheCoordinatesXy(System.String,System.Int32,System.Int32)">
+            <summary>
+            The when i drag web element and drop at the coordinates x e y in the page drag and drop page.
+            </summary>
+            <param name="webElementName">The web element name.</param>
+            <param name="positionX">The position x.</param>
+            <param name="positionY">The position y.</param>
+        </member>
+        <member name="T:Specflow.Steps.FeatureOfOtherFeaturesSteps">
+            <summary>
+            The feature of other features steps.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.FeatureOfOtherFeaturesSteps.GivenIAmReusingTheRegisterUsersScenario">
+            <summary>
+            The given i am reusing the register users scenario.
+            </summary>
+        </member>
+        <member name="T:Specflow.Steps.FieldLimitationsSteps">
+            <summary>
+            The field limitations.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.FieldLimitationsSteps.fieldLimitationsPage">
+            <summary>
+            The field limitations page.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.FieldLimitationsSteps.#ctor(BoDi.IObjectContainer)">
+            <summary>
+             Initializes a new instance of the <see cref="T:Specflow.Steps.FieldLimitationsSteps"/> class.
+            </summary>
+            <param name="objectContainer">The specflow object container.</param>
+        </member>
+        <member name="M:Specflow.Steps.FieldLimitationsSteps.GivenITypeTheValueInTheNameField(System.String)">
+            <summary>
+            The Given I type the value in the name field step.
+            </summary>
+            <param name="fieldValue">The value that is going to be typed into the name field.</param>
+        </member>
+        <member name="M:Specflow.Steps.FieldLimitationsSteps.ThenTheExtraCharactersAreTrimmedByTheRight(System.String)">
+            <summary>
+            Then the extra characters are trimmed by the right.
+            </summary>
+            <param name="fieldValue">The field value.</param>
+        </member>
+        <member name="T:Specflow.Steps.FileOperationsSteps">
+            <summary>
+            The file moving steps.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.FileOperationsSteps.objectContainer">
+            <summary>
+            The object container.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.FileOperationsSteps.fileOperationsHelper">
+            <summary>
+            The file operations helper.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.FileOperationsSteps.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.Steps.FileOperationsSteps"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="P:Specflow.Steps.FileOperationsSteps.Parameters">
+            <summary>
+            Gets the Parameters.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.FileOperationsSteps.GivenIHaveAFileWithTheNameTestInTheFolder(System.String,System.String)">
+            <summary>
+            The given i have a file with the name test in the folder.
+            </summary>
+            <param name="fileName">The file Name.</param>
+            <param name="folderName">The folder Name.</param>
+        </member>
+        <member name="M:Specflow.Steps.FileOperationsSteps.IMoveItToTheFolderTest(System.String)">
+            <summary>
+            The given i move it to the folder test.
+            </summary>
+            <param name="targetFolderName">The target Folder Name.</param>
+        </member>
+        <member name="M:Specflow.Steps.FileOperationsSteps.ThenTheFileIsMovedToTheDestinationFolderInLessThanSeconds(System.Int32)">
+            <summary>
+            The then the file is moved to the destination folder in less than seconds.
+            </summary>
+            <param name="timeout">The timeout.</param>
+        </member>
+        <member name="M:Specflow.Steps.FileOperationsSteps.WhenICopyItToTheFolder(System.String)">
+            <summary>
+            The when i copy it to the folder destination Folder.
+            </summary>
+            <param name="targetFolderName">The target Folder Name.</param>
+        </member>
+        <member name="M:Specflow.Steps.FileOperationsSteps.ThenTheFileIsCopiedToTheDestinationFolderInLessThanSeconds(System.Int32)">
+            <summary>
+            The then the file is copied to the destination folder in less than seconds.
+            </summary>
+            <param name="timeout">The timeout.</param>
+        </member>
+        <member name="T:Specflow.Steps.FileUploadAndDownloadSteps">
+            <summary>
+            The file upload and download steps.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.FileUploadAndDownloadSteps.fileDownloadPage">
+            <summary>
+            The file download page.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.FileUploadAndDownloadSteps.fileUploadPage">
+            <summary>
+            The file upload page.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.FileUploadAndDownloadSteps.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.Steps.FileUploadAndDownloadSteps"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="P:Specflow.Steps.FileUploadAndDownloadSteps.ConfigurationParameters">
+            <summary>
+            Gets the configuration parameters.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.FileUploadAndDownloadSteps.ThenTheFileIsDownloaded(System.String)">
+            <summary>
+            Then the file is downloaded.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="M:Specflow.Steps.FileUploadAndDownloadSteps.ThenTheFileIsUploaded">
+            <summary>
+            The then the file is uploaded.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.FileUploadAndDownloadSteps.WhenIPressOnTheUploadButtonAndITypeTheFileNameAndIPressTheEnterKey(System.String)">
+            <summary>
+            The when i press on the upload button.
+            </summary>
+            <param name="fileNameAndPath">The file Name And Path.</param>
+        </member>
+        <member name="M:Specflow.Steps.FileUploadAndDownloadSteps.WhenIPressOnTheDownloadButtonAndITypeTheFileNameTestDataTestDocxAndIPressTheEnterKey(System.String)">
+            <summary>
+            The when I type the file name and press the enter key.
+            </summary>
+            <param name="fileNameAndPath">describe fileNameAndPath parameter on WhenIPressOnTheDownloadButtonAndITypeTheFileNameTestDataTest_DocxAndIPressTheEnterKey.</param>
+        </member>
+        <member name="M:Specflow.Steps.FileUploadAndDownloadSteps.WhenIClickOnButton(System.String)">
+            <summary>
+            Whens the i click on button.
+            </summary>
+            <param name="buttonName">Name of the button.</param>
+        </member>
+        <member name="M:Specflow.Steps.FileUploadAndDownloadSteps.ThenTheFileIsDeleted(System.String)">
+            <summary>
+            Thens the file is deleted.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="T:Specflow.Steps.MongoDbDatabaseManageSteps">
+            <summary>
+            The mongo DB database access and modification steps . test.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.MongoDbDatabaseManageSteps.objectContainer">
+            <summary>
+            The object container.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.MongoDbDatabaseManageSteps.mongoDbHelper">
+            <summary>
+            Url used in the webTable test cases.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.MongoDbDatabaseManageSteps.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.Steps.MongoDbDatabaseManageSteps"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="M:Specflow.Steps.MongoDbDatabaseManageSteps.GivenIHaveANonExistingClient">
+            <summary>
+            The given i have a non existing client.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.MongoDbDatabaseManageSteps.GivenIHaveAnExistingClient">
+            <summary>
+            The given i have an existing client.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.MongoDbDatabaseManageSteps.WhenIAddTheDataOfThisClientToTheDatabase">
+            <summary>
+            The when i add the data of this client to the database.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.MongoDbDatabaseManageSteps.WhenIGetTheDataOfThisClient">
+            <summary>
+            The when i get the data of this client.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.MongoDbDatabaseManageSteps.ThenThisClientShouldNotBeFoundInTheDatabase">
+            <summary>
+            The then this client should not be found in the database.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.MongoDbDatabaseManageSteps.GivenIHaveAddedANonExistingElement">
+            <summary>
+            Then I have added a non existing element.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.MongoDbDatabaseManageSteps.ThenThisClientShouldBeFoundInTheDatabase">
+            <summary>
+            Then this client should appear in the database.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.MongoDbDatabaseManageSteps.WhenIRemoveThisClient">
+            <summary>
+            When I remove this client.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.MongoDbDatabaseManageSteps.WhenIModifyTheValueOfTheLastNameToBe(System.String)">
+            <summary>
+            When I modify the value of the last name.
+            </summary>
+            <param name="lastName">new value of the lastName field.</param>
+        </member>
+        <member name="T:Specflow.Steps.RegistrationSteps">
+            <summary>
+            The login steps.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.RegistrationSteps.options">
+            <summary>
+            The configuration parameters.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.RegistrationSteps.registrationPage">
+            <summary>
+            The registration page.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.RegistrationSteps.homePage">
+            <summary>
+            The home page.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.RegistrationSteps.registrationUsersHelper">
+            <summary>
+            The registration users helper.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.RegistrationSteps.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.Steps.RegistrationSteps"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="M:Specflow.Steps.RegistrationSteps.ThenTheResultOfTheLoginIsEqualToTheOneProvidedInTheExcel">
+            <summary>
+            The then the result of the login is equal to the one provided in the excel.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.RegistrationSteps.GivenIClickOnTheSigninButton">
+            <summary>
+            The given i click on the login button.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.RegistrationSteps.WhenIRegisterAUserWithTheDataOfTheExcelFile">
+            <summary>
+            The when i register a user with the data of the excel file.
+            </summary>
+        </member>
+        <member name="T:Specflow.Steps.WebElementsChecksSteps">
+            <summary>
+            The WebElement check steps.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.WebElementsChecksSteps.objectContainer">
+            <summary>
+            The object container.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.WebElementsChecksSteps.webElementsChecksPage1">
+            <summary>
+            The web elements checks page1.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.WebElementsChecksSteps.homePage">
+            <summary>
+            The home page.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.WebElementsChecksSteps.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.Steps.WebElementsChecksSteps"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="M:Specflow.Steps.WebElementsChecksSteps.ThenTheColorOfTheElementElementShouldBeRed(System.String)">
+            <summary>
+            Then the color of the element element should be red.
+            </summary>
+            <param name="color">The color.</param>
+        </member>
+        <member name="M:Specflow.Steps.WebElementsChecksSteps.ThenTheElementHasLines(System.Int32)">
+            <summary>
+            Thens the element has lines.
+            </summary>
+            <param name="lineNumber">The line number.</param>
+        </member>
+        <member name="T:Specflow.Steps.WebTableSteps">
+            <summary>
+            The web table steps.
+            </summary>
+        </member>
+        <member name="F:Specflow.Steps.WebTableSteps.webTablePage">
+            <summary>
+            The web table page.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.WebTableSteps.#ctor(BoDi.IObjectContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Specflow.Steps.WebTableSteps"/> class.
+            </summary>
+            <param name="objectContainer">The object container.</param>
+        </member>
+        <member name="P:Specflow.Steps.WebTableSteps.ConfigurationParameters">
+            <summary>
+            Gets the Parameters.
+            </summary>
+        </member>
+        <member name="M:Specflow.Steps.WebTableSteps.ThenAtTheTableShouldAppearTheValueAtTheStructureInTheColumn(System.String,System.String,System.String,System.String)">
+            <summary>
+            Get the information of a cell in a webTable from column and row.
+            </summary>
+            <param name="table">the table.</param>
+            <param name="value">the value.</param>
+            <param name="structure">the row.</param>
+            <param name="column">the column.</param>
+        </member>
+        <member name="M:Specflow.Steps.WebTableSteps.ThenICheckThatTheValuesOfTheColumnContainTheValueM(System.String,System.Int32,System.String)">
+            <summary>
+            at the webTable (.*) all the cells of the column (.*),  contain the value (.*).
+            </summary>
+            <param name="webTableName">The webTable name.</param>
+            <param name="column">the webTable column.</param>
+            <param name="value">The value.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,144 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Configurations>Debug;ChromeDesktop;ChromeAndroid8;Firefox;IE11;Safari</Configurations>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>false</Optimize>
+    <DocumentationFile>..\Shared\bin\SpecflowTests.xml</DocumentationFile>
+    <OutputPath>..\Shared\bin</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ChromeDesktop|AnyCPU'">
+    <Optimize>false</Optimize>
+    <DocumentationFile>..\Shared\bin\SpecflowTests.xml</DocumentationFile>
+    <OutputPath>..\Shared\bin</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ChromeAndroid8|AnyCPU'">
+    <Optimize>false</Optimize>
+    <DocumentationFile>..\Shared\bin\SpecflowTests.xml</DocumentationFile>
+    <OutputPath>..\Shared\bin</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Safari|AnyCPU'">
+    <Optimize>false</Optimize>
+    <DocumentationFile>..\Shared\bin\SpecflowTests.xml</DocumentationFile>
+    <OutputPath>..\Shared\bin</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Firefox|AnyCPU'">
+    <Optimize>false</Optimize>
+    <DocumentationFile>..\Shared\bin\SpecflowTests.xml</DocumentationFile>
+    <OutputPath>..\Shared\bin</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IE11|AnyCPU'">
+    <Optimize>false</Optimize>
+    <DocumentationFile>..\Shared\bin\SpecflowTests.xml</DocumentationFile>
+    <OutputPath>..\Shared\bin</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TestData\test.docx" />
+    <None Remove="TestData\TestData.xlsx" />
+    <None Remove="WebDriver\IEDriverServer.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="..\Shared\stylecop.json" Link="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="TestData\test.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestData\TestData.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.9" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.0-preview-20200921-01" />
+    <PackageReference Include="Microsoft.NetFramework.Analyzers" Version="3.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.SlowCheetah" Version="3.2.26">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MSTest.TestAdapter" Version="2.1.2" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.2" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="86.0.4240.2200" />
+    <PackageReference Include="SpecFlow" Version="3.4.14" />
+    <PackageReference Include="SpecFlow.MsTest" Version="3.4.14" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.4.14" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="Unity" Version="5.11.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiHelper\ApiHelper.csproj" />
+    <ProjectReference Include="..\DataFactory\DataFactory.csproj" />
+    <ProjectReference Include="..\FileOperationsHelper\FileOperationsHelper.csproj" />
+    <ProjectReference Include="..\MongoDbHelper\MongoDbHelper.csproj" />
+    <ProjectReference Include="..\WebDriverHelper\WebDriverHelper.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="WebDriver\IEDriverServer.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.ChromeAndroid8.json">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>appsettings.json</DependentUpon>
+    </None>
+    <None Update="appsettings.ChromeDesktop.json">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>appsettings.json</DependentUpon>
+    </None>
+    <None Update="appsettings.Debug.json">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>appsettings.json</DependentUpon>
+    </None>
+    <None Update="appsettings.Firefox.json">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>appsettings.json</DependentUpon>
+    </None>
+    <None Update="appsettings.IE11.json">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>appsettings.json</DependentUpon>
+    </None>
+    <None Update="appsettings.json">
+      <TransformOnBuild>true</TransformOnBuild>
+    </None>
+    <None Update="appsettings.Safari.json">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>appsettings.json</DependentUpon>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,166 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataFactory", "DataFactory\DataFactory.csproj", "{16C58CED-51C2-4DB0-92B9-8673389C9E0D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDriverHelper", "WebDriverHelper\WebDriverHelper.csproj", "{646B3EB2-772E-4605-B62E-11B9CE968D39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Shared", "2. Shared", "{3DF80E33-E9E9-4A4E-940E-BB504B57475E}"
+	ProjectSection(SolutionItems) = preProject
+		Shared\stylecop.json = Shared\stylecop.json
+		Stylecop.ruleset = Stylecop.ruleset
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpecflowTests", "SpecflowTests\SpecflowTests.csproj", "{BE9B4A6E-81BF-4471-88BE-775C05AE4222}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Setup", "1. Setup", "{5ABCBBF7-1EBC-4ED3-91C1-BBBAF818D31F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "registry-modifications-for-ie", "registry-modifications-for-ie", "{FA4DF79C-424D-49AC-A1CA-DE5ABEDAC385}"
+	ProjectSection(SolutionItems) = preProject
+		Setup\ie32Feature-bfcache.reg = Setup\ie32Feature-bfcache.reg
+		Setup\ie64Feature-bfcache.reg = Setup\ie64Feature-bfcache.reg
+		Setup\tabGrouth.reg = Setup\tabGrouth.reg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "runsettings", "runsettings", "{66B93D50-67BC-4BDF-9746-637A8EC61920}"
+	ProjectSection(SolutionItems) = preProject
+		Shared\parallel.runsettings = Shared\parallel.runsettings
+		Shared\serial.runsettings = Shared\serial.runsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Helpers", "3. Helpers", "{63E95759-3E21-4628-888A-8729BB151D6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Features", "4. Features", "{3398F295-E129-4788-B50D-3A0AAFA4611B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Data Factory", "5. Data Factory", "{7EC4C2A3-3315-4A2F-88E6-5DAFC087EAC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiHelper", "ApiHelper\ApiHelper.csproj", "{AC8353FB-1A93-4743-8492-EFCFB4446329}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileOperationsHelper", "FileOperationsHelper\FileOperationsHelper.csproj", "{51FDB7F5-D924-4116-B766-22008C61E3C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoDbHelper", "MongoDbHelper\MongoDbHelper.csproj", "{49E7F5F9-57B5-45E1-A058-1665AF75501E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BBD75684-BCAB-4233-93BA-FD9A0E0C03E3}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ChromeAndroid8|Any CPU = ChromeAndroid8|Any CPU
+		ChromeDesktop|Any CPU = ChromeDesktop|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Firefox|Any CPU = Firefox|Any CPU
+		IE11|Any CPU = IE11|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Safari|Any CPU = Safari|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D}.ChromeAndroid8|Any CPU.ActiveCfg = ChromeAndroid8|Any CPU
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D}.ChromeAndroid8|Any CPU.Build.0 = ChromeAndroid8|Any CPU
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D}.ChromeDesktop|Any CPU.ActiveCfg = ChromeDesktop|Any CPU
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D}.ChromeDesktop|Any CPU.Build.0 = ChromeDesktop|Any CPU
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D}.Firefox|Any CPU.ActiveCfg = Firefox|Any CPU
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D}.Firefox|Any CPU.Build.0 = Firefox|Any CPU
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D}.IE11|Any CPU.ActiveCfg = IE11|Any CPU
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D}.IE11|Any CPU.Build.0 = IE11|Any CPU
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D}.Release|Any CPU.ActiveCfg = Safari|Any CPU
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D}.Release|Any CPU.Build.0 = Safari|Any CPU
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D}.Safari|Any CPU.ActiveCfg = Safari|Any CPU
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D}.Safari|Any CPU.Build.0 = Safari|Any CPU
+		{646B3EB2-772E-4605-B62E-11B9CE968D39}.ChromeAndroid8|Any CPU.ActiveCfg = ChromeAndroid8|Any CPU
+		{646B3EB2-772E-4605-B62E-11B9CE968D39}.ChromeAndroid8|Any CPU.Build.0 = ChromeAndroid8|Any CPU
+		{646B3EB2-772E-4605-B62E-11B9CE968D39}.ChromeDesktop|Any CPU.ActiveCfg = ChromeDesktop|Any CPU
+		{646B3EB2-772E-4605-B62E-11B9CE968D39}.ChromeDesktop|Any CPU.Build.0 = ChromeDesktop|Any CPU
+		{646B3EB2-772E-4605-B62E-11B9CE968D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{646B3EB2-772E-4605-B62E-11B9CE968D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{646B3EB2-772E-4605-B62E-11B9CE968D39}.Firefox|Any CPU.ActiveCfg = Firefox|Any CPU
+		{646B3EB2-772E-4605-B62E-11B9CE968D39}.Firefox|Any CPU.Build.0 = Firefox|Any CPU
+		{646B3EB2-772E-4605-B62E-11B9CE968D39}.IE11|Any CPU.ActiveCfg = IE11|Any CPU
+		{646B3EB2-772E-4605-B62E-11B9CE968D39}.IE11|Any CPU.Build.0 = IE11|Any CPU
+		{646B3EB2-772E-4605-B62E-11B9CE968D39}.Release|Any CPU.ActiveCfg = Safari|Any CPU
+		{646B3EB2-772E-4605-B62E-11B9CE968D39}.Release|Any CPU.Build.0 = Safari|Any CPU
+		{646B3EB2-772E-4605-B62E-11B9CE968D39}.Safari|Any CPU.ActiveCfg = Safari|Any CPU
+		{646B3EB2-772E-4605-B62E-11B9CE968D39}.Safari|Any CPU.Build.0 = Safari|Any CPU
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222}.ChromeAndroid8|Any CPU.ActiveCfg = ChromeAndroid8|Any CPU
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222}.ChromeAndroid8|Any CPU.Build.0 = ChromeAndroid8|Any CPU
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222}.ChromeDesktop|Any CPU.ActiveCfg = ChromeDesktop|Any CPU
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222}.ChromeDesktop|Any CPU.Build.0 = ChromeDesktop|Any CPU
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222}.Firefox|Any CPU.ActiveCfg = Firefox|Any CPU
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222}.Firefox|Any CPU.Build.0 = Firefox|Any CPU
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222}.IE11|Any CPU.ActiveCfg = IE11|Any CPU
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222}.IE11|Any CPU.Build.0 = IE11|Any CPU
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222}.Release|Any CPU.ActiveCfg = Safari|Any CPU
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222}.Release|Any CPU.Build.0 = Safari|Any CPU
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222}.Safari|Any CPU.ActiveCfg = Safari|Any CPU
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222}.Safari|Any CPU.Build.0 = Safari|Any CPU
+		{AC8353FB-1A93-4743-8492-EFCFB4446329}.ChromeAndroid8|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC8353FB-1A93-4743-8492-EFCFB4446329}.ChromeAndroid8|Any CPU.Build.0 = Debug|Any CPU
+		{AC8353FB-1A93-4743-8492-EFCFB4446329}.ChromeDesktop|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC8353FB-1A93-4743-8492-EFCFB4446329}.ChromeDesktop|Any CPU.Build.0 = Debug|Any CPU
+		{AC8353FB-1A93-4743-8492-EFCFB4446329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC8353FB-1A93-4743-8492-EFCFB4446329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC8353FB-1A93-4743-8492-EFCFB4446329}.Firefox|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC8353FB-1A93-4743-8492-EFCFB4446329}.Firefox|Any CPU.Build.0 = Debug|Any CPU
+		{AC8353FB-1A93-4743-8492-EFCFB4446329}.IE11|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC8353FB-1A93-4743-8492-EFCFB4446329}.IE11|Any CPU.Build.0 = Debug|Any CPU
+		{AC8353FB-1A93-4743-8492-EFCFB4446329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC8353FB-1A93-4743-8492-EFCFB4446329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC8353FB-1A93-4743-8492-EFCFB4446329}.Safari|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC8353FB-1A93-4743-8492-EFCFB4446329}.Safari|Any CPU.Build.0 = Debug|Any CPU
+		{51FDB7F5-D924-4116-B766-22008C61E3C3}.ChromeAndroid8|Any CPU.ActiveCfg = Debug|Any CPU
+		{51FDB7F5-D924-4116-B766-22008C61E3C3}.ChromeAndroid8|Any CPU.Build.0 = Debug|Any CPU
+		{51FDB7F5-D924-4116-B766-22008C61E3C3}.ChromeDesktop|Any CPU.ActiveCfg = Debug|Any CPU
+		{51FDB7F5-D924-4116-B766-22008C61E3C3}.ChromeDesktop|Any CPU.Build.0 = Debug|Any CPU
+		{51FDB7F5-D924-4116-B766-22008C61E3C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51FDB7F5-D924-4116-B766-22008C61E3C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51FDB7F5-D924-4116-B766-22008C61E3C3}.Firefox|Any CPU.ActiveCfg = Debug|Any CPU
+		{51FDB7F5-D924-4116-B766-22008C61E3C3}.Firefox|Any CPU.Build.0 = Debug|Any CPU
+		{51FDB7F5-D924-4116-B766-22008C61E3C3}.IE11|Any CPU.ActiveCfg = Debug|Any CPU
+		{51FDB7F5-D924-4116-B766-22008C61E3C3}.IE11|Any CPU.Build.0 = Debug|Any CPU
+		{51FDB7F5-D924-4116-B766-22008C61E3C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51FDB7F5-D924-4116-B766-22008C61E3C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51FDB7F5-D924-4116-B766-22008C61E3C3}.Safari|Any CPU.ActiveCfg = Debug|Any CPU
+		{51FDB7F5-D924-4116-B766-22008C61E3C3}.Safari|Any CPU.Build.0 = Debug|Any CPU
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E}.ChromeAndroid8|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E}.ChromeAndroid8|Any CPU.Build.0 = Debug|Any CPU
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E}.ChromeDesktop|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E}.ChromeDesktop|Any CPU.Build.0 = Debug|Any CPU
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E}.Firefox|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E}.Firefox|Any CPU.Build.0 = Debug|Any CPU
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E}.IE11|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E}.IE11|Any CPU.Build.0 = Debug|Any CPU
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E}.Safari|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E}.Safari|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{16C58CED-51C2-4DB0-92B9-8673389C9E0D} = {7EC4C2A3-3315-4A2F-88E6-5DAFC087EAC3}
+		{646B3EB2-772E-4605-B62E-11B9CE968D39} = {63E95759-3E21-4628-888A-8729BB151D6F}
+		{BE9B4A6E-81BF-4471-88BE-775C05AE4222} = {3398F295-E129-4788-B50D-3A0AAFA4611B}
+		{FA4DF79C-424D-49AC-A1CA-DE5ABEDAC385} = {5ABCBBF7-1EBC-4ED3-91C1-BBBAF818D31F}
+		{66B93D50-67BC-4BDF-9746-637A8EC61920} = {5ABCBBF7-1EBC-4ED3-91C1-BBBAF818D31F}
+		{AC8353FB-1A93-4743-8492-EFCFB4446329} = {63E95759-3E21-4628-888A-8729BB151D6F}
+		{51FDB7F5-D924-4116-B766-22008C61E3C3} = {63E95759-3E21-4628-888A-8729BB151D6F}
+		{49E7F5F9-57B5-45E1-A058-1665AF75501E} = {63E95759-3E21-4628-888A-8729BB151D6F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03D1579F-9F52-42B1-A706-04463D4677B5}
+	EndGlobalSection
+EndGlobal
