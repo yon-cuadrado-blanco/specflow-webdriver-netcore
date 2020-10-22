@@ -133,6 +133,7 @@
     </None>
     <None Update="appsettings.json">
       <TransformOnBuild>true</TransformOnBuild>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="appsettings.Safari.json">
       <IsTransformFile>true</IsTransformFile>
