@@ -7,7 +7,6 @@ namespace Automation.Pages
 {
     using System;
     using System.Globalization;
-    using Automation.Core.WebDriver.Extensions;
     using Automation.WebDriverHelper;
     using DataFactory.Configuration;
     using global::WebDriverHelper.Extensions;

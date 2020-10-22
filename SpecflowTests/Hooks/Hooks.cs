@@ -136,7 +136,6 @@ namespace Specflow.GlobalFunctions
                 if (this.objectContainer.IsRegistered<WebDriverContext>() || WebDriverContextStatic != null)
                 {
                     var webdriverContext = WebDriverContextStatic ?? this.objectContainer.Resolve<WebDriverContext>();
-                    var configurationParameters = this.objectContainer.Resolve<IWritableOptions<ConfigurationParameters>>();
 
                     if (scenarioContext != null && !webdriverContext.IsWebDriverNull())
                     {

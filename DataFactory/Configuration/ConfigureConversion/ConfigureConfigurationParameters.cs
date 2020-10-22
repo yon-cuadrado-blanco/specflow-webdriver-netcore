@@ -8,7 +8,6 @@ namespace DataFactory.Configuration
     using System;
     using System.Globalization;
     using System.IO;
-    using DataFactory.Configuration.Parameters;
     using Microsoft.Extensions.Options;
 
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
@@ -34,7 +33,7 @@ namespace DataFactory.Configuration
                 Path.Combine(
                 nameof(Environment.SpecialFolder.ProgramFiles),
                 Constants.FirefoxExecutableName),
-                false,
+                ignoreCase: false,
                 new CultureInfo("es-ES"));
             options.BrowsersConfiguration.FirefoxDriverPath = System.IO.Directory.GetCurrentDirectory() + "/" + options.BrowsersConfiguration.FirefoxDriverPath;
             options.BrowsersConfiguration.IeDriverPath = Path.Combine(System.IO.Directory.GetCurrentDirectory(), options.BrowsersConfiguration.IeDriverPath);

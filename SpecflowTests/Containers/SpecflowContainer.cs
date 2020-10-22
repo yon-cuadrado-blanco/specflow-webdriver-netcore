@@ -7,7 +7,6 @@ namespace Specflow
 {
     using Automation.Helpers;
     using Automation.Pages;
-    using Automation.WebDriverHelper;
     using BoDi;
     using DataFactory.Configuration;
     using WebDriverHelper.Pages;

@@ -6,7 +6,6 @@
 namespace Automation.WebDriverHelper
 {
     using System;
-    using System.Reflection;
     using DataFactory.Configuration;
     using global::WebDriverHelper.Setup;
     using OpenQA.Selenium;

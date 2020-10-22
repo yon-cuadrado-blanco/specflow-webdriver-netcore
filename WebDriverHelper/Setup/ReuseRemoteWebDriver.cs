@@ -10,7 +10,6 @@ namespace WebDriverHelper.Setup
     using System.Collections.Generic;
     using System.Diagnostics.Contracts;
     using System.Reflection;
-    using DataFactory.Configuration;
     using OpenQA.Selenium;
     using OpenQA.Selenium.Remote;
 

@@ -127,12 +127,10 @@ namespace Automation.Helpers
         /// <returns>The ClientsDto object.</returns>
         public ClientsDto GetEmployee()
         {
-            var id = this.Client._id;
             var numbers = this.Client.Addresses.Select(bidResult => bidResult.Number).ToList();
             var streets = this.Client.Addresses.Select(bidResult => bidResult.Street).ToList();
             var postalCodes = this.Client.Addresses.Select(bidResult => bidResult.PostalCode).ToList();
 
-            // this.collection.InsertOne(client);
             var builder = Builders<ClientsDto>.Filter;
             var filter = builder.Eq(x => x.FirstName, this.Client.FirstName)
                 & builder.Eq(x => x.LastName, this.Client.LastName)
@@ -143,7 +141,6 @@ namespace Automation.Helpers
                 && postalCodes.Contains(el.PostalCode)));
 
             // Testing of mongodb filters var renderedFilter =
-            // filter.Render(this.collection.DocumentSerializer, this.collection.Settings.SerializerRegistry);
             var result = this.collection.FindAsync(filter).Result.ToList();
             this.matchFound = result.Count > 0 ? result[0] : null;
             return result.Count > 0 ? result[0] : null;

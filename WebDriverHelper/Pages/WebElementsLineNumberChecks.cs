@@ -5,7 +5,6 @@
 
 namespace WebDriverHelper.Pages
 {
-    using Automation.Core.WebDriver.Extensions;
     using Automation.WebDriverHelper;
     using OpenQA.Selenium;
     using WebDriverHelper.Extensions;
