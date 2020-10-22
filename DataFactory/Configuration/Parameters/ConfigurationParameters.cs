@@ -640,5 +640,7 @@ namespace DataFactory.Configuration
         /// Gets or sets the elmements height url.
         /// </summary>
         public Uri ElementsHeightUrl { get; set; }
+
+        public Uri ShopUrl { get; set; }
     }
 }

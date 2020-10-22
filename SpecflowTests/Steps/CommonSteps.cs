@@ -63,6 +63,7 @@ namespace Specflow.Steps
                 "DragAndDropUrl" => this.options.Value.UrlParameters.DragAndDropUrl,
                 "WebElementsColor" => this.options.Value.UrlParameters.WebElementsColorUrl,
                 "ElementsHeightUrl" => this.options.Value.UrlParameters.ElementsHeightUrl,
+                "shopUrl" => this.options.Value.UrlParameters.ShopUrl,
                 _ => throw new Exception("url of the app not defined"),
             };
             return returnValue;

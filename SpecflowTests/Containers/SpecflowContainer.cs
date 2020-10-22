@@ -31,6 +31,7 @@ namespace Specflow
             this.ObjectContainer.RegisterTypeAs<DragAndDropPage, DragAndDropPage>();
             this.ObjectContainer.RegisterTypeAs<WebElementColorsCheckPage, WebElementColorsCheckPage>();
             this.ObjectContainer.RegisterTypeAs<WebElementsLineNumberChecks, WebElementsLineNumberChecks>();
+            this.ObjectContainer.RegisterTypeAs<ShopPage, ShopPage>();
 
             this.ObjectContainer = objectContainer;
         }
