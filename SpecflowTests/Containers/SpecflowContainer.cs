@@ -10,7 +10,6 @@ namespace Specflow
     using Automation.WebDriverHelper;
     using BoDi;
     using DataFactory.Configuration;
-    using Unity;
     using WebDriverHelper.Pages;
 
     /// <summary>

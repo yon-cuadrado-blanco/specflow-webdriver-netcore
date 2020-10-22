@@ -11,7 +11,6 @@ namespace Specflow.Steps
     using Specflow.GlobalFunctions;
     using TechTalk.SpecFlow;
     using TechTalk.SpecFlow.Infrastructure;
-    using Unity;
 
     /// <summary>
     /// The common steps.

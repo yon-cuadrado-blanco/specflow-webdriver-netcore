@@ -9,7 +9,6 @@ namespace Specflow.Steps
     using BoDi;
     using TechTalk.SpecFlow;
     using TechTalk.SpecFlow.Infrastructure;
-    using Unity;
 
     /// <summary>
     /// The drag and drop steps.

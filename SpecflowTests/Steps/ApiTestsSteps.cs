@@ -12,7 +12,6 @@ namespace Specflow.Steps
     using Newtonsoft.Json.Linq;
     using TechTalk.SpecFlow;
     using TechTalk.SpecFlow.Infrastructure;
-    using Unity;
 
     /// <summary>
     /// The API tests steps.

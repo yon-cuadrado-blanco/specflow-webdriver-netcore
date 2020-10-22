@@ -68,11 +68,6 @@ namespace DataFactory.Configuration
         public Browser Browser { get; set; }
 
         /// <summary>
-        /// Gets or sets the type of the execution.
-        /// </summary>
-        public string ExecutionType { get; set; }
-
-        /// <summary>
         /// Gets or sets a value indicating whether [reuse browser].
         /// </summary>
         public bool ReuseBrowser { get; set; }

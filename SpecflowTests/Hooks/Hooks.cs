@@ -9,7 +9,6 @@ namespace Specflow.GlobalFunctions
 {
     using System;
     using System.Linq;
-    using System.Runtime.CompilerServices;
     using Automation.WebDriverHelper;
     using BoDi;
     using Castle.Core.Internal;
@@ -23,7 +22,6 @@ namespace Specflow.GlobalFunctions
     using OpenQA.Selenium.Appium.Service;
     using TechTalk.SpecFlow;
     using TechTalk.SpecFlow.Infrastructure;
-    using Unity;
 
     /// <summary>
     /// The Specflow Hooks.
@@ -91,8 +89,6 @@ namespace Specflow.GlobalFunctions
                 
             if (webDriverContext?.WebDriver == null)
             {
-                //webDriverContext = new WebDriverContext(options);
-                //webDriverContext.CreateWebDriver();
                 if (!objectContainer.IsRegistered<WebDriverContext>())
                 {
                     objectContainer.RegisterTypeAs<WebDriverContext, WebDriverContext>();
@@ -141,14 +137,6 @@ namespace Specflow.GlobalFunctions
                 {
                     var webdriverContext = WebDriverContextStatic ?? this.objectContainer.Resolve<WebDriverContext>();
                     var configurationParameters = this.objectContainer.Resolve<IWritableOptions<ConfigurationParameters>>();
-                    var executionType = configurationParameters.Value.BrowsersConfiguration.ExecutionType;
-                    var reuseBrowser = configurationParameters.Value.BrowsersConfiguration.ReuseBrowser;
-
-                    //if (!reuseBrowser || configurationParameters.Value.BrowsersConfiguration.Browser == Browser.IE11)
-                    //{
-                    //    webdriverContext?.CloseBrowser();
-                    //    WebDriverContextStatic = null;
-                    //}
 
                     if (scenarioContext != null && !webdriverContext.IsWebDriverNull())
                     {

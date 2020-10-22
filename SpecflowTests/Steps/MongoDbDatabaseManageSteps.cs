@@ -13,7 +13,6 @@ namespace Specflow.Steps
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using TechTalk.SpecFlow;
     using TechTalk.SpecFlow.Infrastructure;
-    using Unity;
 
     /// <summary>
     /// The mongo DB database access and modification steps . test.

@@ -12,7 +12,6 @@ namespace Specflow.Steps
 
     using TechTalk.SpecFlow;
     using TechTalk.SpecFlow.Infrastructure;
-    using Unity;
 
     /// <summary>
     /// The file moving steps.
